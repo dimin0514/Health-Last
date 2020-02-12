@@ -45,7 +45,6 @@ profile = (()=>{
 			})
 		})
 		$.getJSON(context+'/post/list/'+sessionStorage.getItem('userno'),d=>{
-			console.log(d);
 			$.each(d,(i,j)=>{
 				$(` 
 				<div class="profile__photo" id="loginedUserPost${j.postno}">
